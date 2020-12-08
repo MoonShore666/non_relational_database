@@ -1,0 +1,17 @@
+{"counters":
+[{"index": "1",
+  "counter_type": 0,
+  "key": "key1",
+  "incrNum": "1",
+  "timeInterval": "3600",
+  "freq_select_type": 0,
+  "dateFormat": "yyyy-MM-dd-HH-mm-ss"},
+  {"index": "2",
+    "counter_type": 1,
+    "key": "key2",
+    "field": "field2",
+    "incrNum": "2",
+    "timeInterval": "3600",
+    "freq_select_type": 1,
+    "dateFormat": "yyyy-MM-dd-HH-mm-ss"}]
+}

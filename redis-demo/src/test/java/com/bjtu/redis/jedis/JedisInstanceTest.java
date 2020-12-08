@@ -6,6 +6,8 @@ import com.bjtu.redis.JedisInstance;
 
 import redis.clients.jedis.Jedis;
 
+import java.util.Scanner;
+
 public class JedisInstanceTest {
 
     /**
@@ -13,10 +15,17 @@ public class JedisInstanceTest {
      */
     @Test
     public void test() {
+        Scanner scanner = new Scanner(System.in);
         Jedis jedis = JedisInstance.getInstance().getResource();
-        jedis.setex("name1", 20, "test");
-        String val = jedis.get("name");
-        System.out.println(val);
+        jedis.hset("key","x","0");
+        System.out.println("Start!");
+
+        System.out.println(jedis.hget("key","x"));
+        jedis.hincrBy("key","x",1);
+        System.out.println(jedis.hget("key","x"));
+        jedis.hincrBy("key","x",1);
+        System.out.println(jedis.hget("key","x"));
+        jedis.hincrBy("key","x",1);
     }
 
 }

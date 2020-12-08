@@ -1,9 +1,10 @@
 package com.bjtu.redis;
 
-import redis.clients.jedis.Jedis;
+import org.springframework.stereotype.Component;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
+@Component
 public class JedisInstance {
     //私有化构造函数
     private JedisInstance(){ }

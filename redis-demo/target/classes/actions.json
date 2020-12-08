@@ -1,0 +1,10 @@
+{"actions":
+[{"index": "1",
+  "name": "incr_counter_1",
+  "tagetCounterIndex": 1,
+  "function": "incr"},
+  {"index": "2",
+    "name": "getIncr_counter_1",
+    "tagetCounterIndex": 1,
+    "function": "getIncr"}]
+}
